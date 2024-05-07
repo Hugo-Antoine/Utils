@@ -1,5 +1,5 @@
 # Generate the SSH key quietly, with no output
-ssh-keygen -t ed25519 -C "$1" -f ~/.ssh/id_ed25519 -N "" -y > /dev/null 2>&1
+ssh-keygen -t ed25519 -C "$1" -f ~/.ssh/id_ed25519 -N ""
  
 # Start ssh-agent silently
 eval "$(ssh-agent -s)" > /dev/null
